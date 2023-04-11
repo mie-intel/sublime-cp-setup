@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+#pragma GCC optimize("Ofast")
+#pragma unroll 2
+
+#define gc getchar
+
+namespace fastio{
+	template <typename T> inline void sca(T &angka){
+		T kali = 1; angka = 0; char input = gc();
+		while (input < '0' || input > '9'){if (input == '-') kali = -1; input = gc();}
+		while(input >= '0' && input <= '9')angka = (angka << 3) + (angka << 1) + input - 48, input = gc();
+		angka *= kali;
+	}
+	template <typename T> inline void scans(T &s){
+		s = ""; char input = gc(); while(input != ' ' && input != '\n') s += input, input = gc();
+	}
+	template <typename T> inline void scanln(T &s){
+		s = ""; char input = gc(); while(input != '\n') s += input, input = gc();
+	}
+	template <typename FIRST, typename... REST > inline void scan( FIRST& first, REST&... rest ); // utama
+	inline void scan() {}
+  	template <typename FIRST, typename... REST > inline void scan( FIRST& first, REST&... rest ){sca(first);scan(rest...);}
+}using namespace fastio;
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fastio</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
