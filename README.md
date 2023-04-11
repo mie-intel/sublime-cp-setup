@@ -1,4 +1,4 @@
-# Sublime Text Competitve Programming Setup
+# Sublime Text Competitive Programming Setup
 I just like to share my sublime setup for competitive programming
 
 ### Snippet
