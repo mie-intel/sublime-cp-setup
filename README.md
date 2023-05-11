@@ -12,6 +12,8 @@ I just like to share my sublime setup for competitive programming
   `pb_ds`             -> pb_ds data structure
   
   `RNG`               -> best random number generator
+  
+  `gp_hash_table`     -> anti anti-unordered_map testcase
 
 ### Build System
 
