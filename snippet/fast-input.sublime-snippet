@@ -1,7 +1,10 @@
 <snippet>
 	<content><![CDATA[
 #pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,fma,popcnt,bmi2,bmi,lzcnt")
 #pragma unroll 2
+#include <immintrin.h>
+uint32_t odd_bits(uint32_t x){return _pext_u32(x, 0x55555555u);}
 
 #define gc getchar
 
