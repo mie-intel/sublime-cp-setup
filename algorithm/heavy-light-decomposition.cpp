@@ -98,3 +98,12 @@ int lca(int a, int b){ // Complexity O(log^2(N)) beacuse of segment tree
 	res = merge(res, query(0, euler.size() - 1, 1, st[a], st[b]));
 	return res;
 }
+
+int main(){
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+
+	
+
+	return 0;
+}
