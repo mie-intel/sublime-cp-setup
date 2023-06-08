@@ -103,7 +103,9 @@ int main(){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 
-	
+	dfs(1, -1);
+	decompose(1, -1, 1);
+	build(0, euler.size() - 1, 1);
 
 	return 0;
 }
