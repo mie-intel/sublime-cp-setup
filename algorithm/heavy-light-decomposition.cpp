@@ -106,6 +106,9 @@ int main(){
 	dfs(1, -1);
 	decompose(1, -1, 1);
 	build(0, euler.size() - 1, 1);
+	
+	// if there is a query from certain node to another
+	cout << lca(node_i, node_j) << '\n';
 
 	return 0;
 }
